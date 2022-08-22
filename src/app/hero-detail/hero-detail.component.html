@@ -1,0 +1,17 @@
+<div *ngIf="hero">
+  <h2><strong>Szczegóły: </strong>{{hero.name | uppercase}} </h2>
+  <div><span>id produktu: </span>{{hero.id}}</div>
+  <div>
+    <label for="hero-name">Nazwa produktu: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="WarehouseEntry name"/>
+  </div>
+  <button type="button" (click)="goBack()">cofnij</button>
+  <button type="button" (click)="save()">zapisz</button>
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
